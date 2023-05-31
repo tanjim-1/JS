@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS/JQ</title>
+    <!-- css links -->
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Practicing java</h1>
+      <h2>Click the button to change the text</h2>
+      <button class="btn btn-dark" onclick="textChange()">Click Here</button>
+      <h2 id="h2">lorem</h2>
+      <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+      <button
+        class="btn btn-dark"
+        onclick="document.getElementById('demo').style.fontSize='35px'"
+      >
+        Click Here
+      </button>
+      <p id="demo1">JavaScript can hide HTML elements.</p>
+
+      <button
+        class="btn btn-dark"
+        onclick="document.getElementById('demo1').style.display='none'"
+      >
+        Click Here
+      </button>
+
+      <p>JavaScript can show hidden HTML elements.</p>
+
+      <p id="demo2" style="display: none">Hello JavaScript!</p>
+
+      <button
+        class="btn btn-dark"
+        onclick="document.getElementById('demo2').style.display='block'"
+      >
+        Click Here
+      </button>
+
+      <p>Addition</p>
+      <p id="demo_1"></p>
+
+      <script>
+        document.getElementById("demo_1").innerHTML = 5 + 6;
+      </script>
+
+      <p>My first paragraph.</p>
+
+      <button class="btn btn-dark" onclick="document.write(5 + 6)">
+        Reveal
+      </button>
+
+      <p>Alert</p>
+
+      <script>
+        alert(5 + 6);
+      </script>
+
+      <p>Click the button to satrt printing</p>
+
+      <button class="btn btn-dark" onclick="window.print()">
+        Print this page
+      </button>
+      <h2>The + Operator</h2>
+
+      <p id="demo_2"></p>
+
+      <script>
+        let x = 5;
+        let y = 2;
+        let z = x + y;
+        document.getElementById("demo_2").innerHTML = z;
+      </script>
+    </div>
+
+    <!-- js links -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
